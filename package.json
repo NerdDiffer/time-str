@@ -1,0 +1,35 @@
+{
+  "name": "time-str",
+  "version": "0.0.0",
+  "description": "Convert time from seconds to a string",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "engines": {
+    "node": ">=6.4.0"
+  },
+  "keywords": [],
+  "author": "Rafael Espinoza <rafael@rafaelespinoza.com> (www.rafaelespinoza.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "cz-conventional-changelog": "^1.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "ava": {
+    "source": [
+      "src/{**/*,*}.js"
+    ],
+    "files": [
+      "test/{**/*,*}.test.js"
+    ],
+    "failFast": false,
+    "tap": false,
+    "verbose": true
+  }
+}
